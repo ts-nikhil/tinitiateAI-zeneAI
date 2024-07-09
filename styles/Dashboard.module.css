@@ -34,3 +34,26 @@
     padding: 20px;
   }
   
+  .tilesContainer {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .tile {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .tile:hover {
+    transform: scale(1.05);
+  }
+  
