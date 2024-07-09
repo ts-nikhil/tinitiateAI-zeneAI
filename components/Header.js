@@ -1,12 +1,14 @@
 // components/Header.js
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import log from '../lib/logger';
 
 const Header = () => {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navigateTo = (path) => {
+    log.info("navigate",{path})
     router.push(path);
     setMenuOpen(false);
   };
